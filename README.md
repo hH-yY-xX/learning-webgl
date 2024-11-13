@@ -32,8 +32,8 @@ gl_FragColor | vec4 | 片元颜色（RGBA格式） | 四个浮点数组成的矢
 方法名 | 描述 | 说明
 -- | -- | --
 gl.clearColor(red, green, blue, alpha) | 指定绘图区域的背景色 | 
-gl.clear(buffer) | 将指定缓冲区设定为预定的值，**如果清空的是颜色缓冲区，那么将使用gl.clearColor()指定的值作为预定值** | buffer: gl.COLOR_BUFFER_BIT指定颜色缓冲区 / gl.DEPTH_BUFFER_BIT 指定深度缓冲区 / gl.STENCIL_BUFFER_BIT指定模板缓冲区 
-gl.drawArrays(mode, first, count) | 执行顶点着色器，按照mode参数指定的方式绘制图形 | mode: gl.POINTS/gl.LINES/gl.LINE_STRIP/gl.LINE_LOOP/gl.TRIANGLES/gl.TRIANGLE_STRIP/gl.TRIANGLE_FAN
+gl.clear(buffer) | 将指定缓冲区设定为预定的值<br>**如果清空的是颜色缓冲区，那么将使用gl.clearColor()指定的值作为预定值** | buffer: <br>gl.COLOR_BUFFER_BIT指定颜色缓冲区 <br>gl.DEPTH_BUFFER_BIT 指定深度缓冲区 <br>gl.STENCIL_BUFFER_BIT指定模板缓冲区 
+gl.drawArrays(mode, first, count) | 执行顶点着色器，按照mode参数指定的方式绘制图形 | mode: <br>gl.POINTS<br>gl.LINES<br>gl.LINE_STRIP<br>gl.LINE_LOOP<br>gl.TRIANGLES<br>gl.TRIANGLE_STRIP<br>gl.TRIANGLE_FAN
 gl.getAttribLocation(program, name) | 获取由name参数指定的attribute变量的存储地址
 gl.getUniformLocation(program, name) | 获取指定名称的uniform变量的存储位置
 gl.vertexAttrib3f(location, v0, v1, v2) | 将数据(v0, v1, v2)传给由location参数指定的attribute变量
